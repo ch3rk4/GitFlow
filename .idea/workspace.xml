@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="write tests for Product and Category and fix code for tests">
+    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="use black, isort and write docstrings">
+      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +50,7 @@
     "git-widget-placeholder": "HW1"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Python tests for test_category_product.test_products_count">
     <configuration name="Python tests for test_category_product.test_categories_count" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GitFlow" />
       <option name="ENV_FILES" value="" />
@@ -182,7 +184,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738500505661</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="realize reading json file and fixes">
+      <option name="closed" value="true" />
+      <created>1738501858971</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738501858971</updated>
+    </task>
+    <task id="LOCAL-00008" summary="use black, isort and write docstrings">
+      <option name="closed" value="true" />
+      <created>1738502027361</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738502027361</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -192,6 +210,8 @@
     <MESSAGE value="add products.json to data" />
     <MESSAGE value="write conftest.py" />
     <MESSAGE value="write tests for Product and Category and fix code for tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="write tests for Product and Category and fix code for tests" />
+    <MESSAGE value="realize reading json file and fixes" />
+    <MESSAGE value="use black, isort and write docstrings" />
+    <option name="LAST_COMMIT_MESSAGE" value="use black, isort and write docstrings" />
   </component>
 </project>

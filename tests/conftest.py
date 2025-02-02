@@ -1,7 +1,16 @@
+from trace import Trace
+
 import pytest
 
 from src.category import Category
 from src.product import Product
+
+
+@pytest.fixture(autouse=True)
+def reset_class_variables() -> None:
+    Category.categories_count = 0
+    Category.products_count = 0
+    yield
 
 
 @pytest.fixture()
