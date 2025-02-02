@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="use black, isort and write docstrings">
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="use coverage and fixes">
+      <change beforePath="$PROJECT_DIR$/src/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/category.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/work_with_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/work_with_json.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +50,11 @@
     "git-widget-placeholder": "HW1"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\petys\PycharmProjects\GitFlow" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python tests.Python tests for test_category_product.test_products_count">
     <configuration name="Python tests for test_category_product.test_categories_count" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GitFlow" />
@@ -200,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738502027361</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="use coverage and fixes">
+      <option name="closed" value="true" />
+      <created>1738502913045</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738502913045</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -212,6 +225,7 @@
     <MESSAGE value="write tests for Product and Category and fix code for tests" />
     <MESSAGE value="realize reading json file and fixes" />
     <MESSAGE value="use black, isort and write docstrings" />
-    <option name="LAST_COMMIT_MESSAGE" value="use black, isort and write docstrings" />
+    <MESSAGE value="use coverage and fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="use coverage and fixes" />
   </component>
 </project>

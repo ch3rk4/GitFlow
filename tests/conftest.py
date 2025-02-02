@@ -1,4 +1,4 @@
-from trace import Trace
+from typing import Generator
 
 import pytest
 
@@ -7,7 +7,7 @@ from src.product import Product
 
 
 @pytest.fixture(autouse=True)
-def reset_class_variables() -> None:
+def reset_class_variables() -> Generator:
     Category.categories_count = 0
     Category.products_count = 0
     yield
