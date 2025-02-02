@@ -7,7 +7,7 @@ from src.product import Product
 def first_category() -> Category:
     return Category(
         name='Vegetables',
-        description='Healthy foods',
+        description='Healthy food',
         products=[
             Product('cucumber', 'smooth', 30.0, 100),
             Product('tomato', 'with a twig', 50.0, 80)
