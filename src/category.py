@@ -1,4 +1,5 @@
 class Category:
+    """Класс формирует категорию 'Категория'"""
     name: str
     description: str
     products: list
