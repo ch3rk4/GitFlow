@@ -6,7 +6,7 @@ from src.category import Category
 from src.product import Product
 
 
-def read_json(path: str) -> dict[Any,Any]:
+def read_json(path: str) -> dict[Any, Any]:
     """Функция чтения json-файла"""
     full_path = os.path.abspath(path)
     with open(full_path, "r", encoding="UTF-8") as file:
