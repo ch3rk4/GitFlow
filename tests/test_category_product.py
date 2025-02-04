@@ -12,11 +12,11 @@ def test_product_init(product: Product) -> None:
 def test_category_init(first_category: Category, second_category: Category) -> None:
     assert first_category.name == "Vegetables"
     assert first_category.description == "Healthy food"
-    assert len(first_category.products) == 2
+    assert len(first_category.products_list) == 2
 
     assert second_category.name == "Dietary meat"
     assert second_category.description == "Healthy meat"
-    assert len(second_category.products) == 3
+    assert len(second_category.products_list) == 3
 
 
 def test_categories_count(first_category: Category, second_category: Category) -> None:

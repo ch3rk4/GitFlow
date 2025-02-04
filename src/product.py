@@ -15,11 +15,11 @@ class Product:
         self.quantity = quantity
 
     @property
-    def price(self):
+    def price(self) -> float:
         return self.__price
 
     @price.setter
-    def price(self, new_price: float):
+    def price(self, new_price: float) -> None:
         if new_price <= 0:
             raise ValueError("Цена должна быть положительной")
         if hasattr(self, "_Product__price") and new_price < self.__price:
@@ -27,10 +27,10 @@ class Product:
                 user_answer = input(
                     "Подтвердите понижение цены товара: введите 'y' (yes) или 'n'(no)"
                 ).lower()
-                if user_answer == 'y':
+                if user_answer == "y":
                     self.__price = new_price
                     break
-                elif user_answer == 'n':
+                elif user_answer == "n":
                     print("Вы отказались понижать цену")
                     break
                 else:
@@ -38,11 +38,15 @@ class Product:
         else:
             self.__price = new_price
 
-
     @classmethod
     def new_product(
-            cls, name: str, description: str, price: float, quantity: int, products: list
-    ) -> 'Product':
+        cls, name: str, description: str, price: float, quantity: int, products: list
+    ) -> "Product":
+
+        for product in products:
+            if not isinstance(product, cls):
+                raise TypeError(f"Объект {product} не является экземпляром класса Product")
+
         for product in products:
             if product.name == name:
                 product.quantity += quantity
@@ -51,4 +55,3 @@ class Product:
         new_product = cls(name, description, price, quantity)
         products.append(new_product)
         return new_product
-

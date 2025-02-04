@@ -20,14 +20,14 @@ class Category:
         Category.products_count += len(products) if products else 0
 
     @property
-    def products(self):
+    def products(self) -> str:
         return f"{self.name}, {self.__products} руб. Остаток: {Category.products_count}"
 
-    def add_product(self, new_product):
+    def add_product(self, new_product) -> None:
         """Добавляет товар в категорию"""
         self.__products.append(new_product)
         Category.products_count += 1
 
     @property
-    def products_list(self):
+    def products_list(self) -> list:
         return self.__products
