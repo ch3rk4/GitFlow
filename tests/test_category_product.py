@@ -27,3 +27,19 @@ def test_categories_count(first_category: Category, second_category: Category) -
 def test_products_count(first_category: Category, second_category: Category) -> None:
     assert first_category.products_count == 5
     assert second_category.products_count == 5
+
+
+def test_products_property(first_category: Category) -> None:
+    assert first_category.products == ([
+        "cucumber, 30.0 руб. Остаток: 100 шт.",
+        "tomato, 50.0 руб. Остаток: 80 шт."
+    ])
+
+def test_products_list_property(first_category: Category) -> None:
+    assert len(first_category.products) == 2
+
+def test_add_product(first_category: Category, product: Product) -> None:
+    first_category.add_product(product)
+    assert len(first_category.products) == 3
+    assert Category.products_count == 3
+
