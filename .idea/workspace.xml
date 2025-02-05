@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="coverage">
+    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="fixes and tests for new funcs from category.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_category_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_category_product.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="HW1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,32 +49,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for test_category_product.test_categories_count.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_category_product.test_category_init.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_category_product.test_product_init.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_category_product.test_products_count.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_work_with_json.TestCreateObjectFromJson.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_work_with_json.TestCreateObjectFromJson.test_empty_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_work_with_json.TestCreateObjectFromJson.test_invalid_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_work_with_json.TestCreateObjectFromJson.test_successful_creation.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_work_with_json.TestReadJson.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_work_with_json.TestReadJson.test_file_not_found.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_work_with_json.TestReadJson.test_invalid_json.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_work_with_json.TestReadJson.test_successful_read.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#1 on HW1&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_category_product.TestProduct.test_new_product_with_invalid_objects.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_add_product.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_categories_count.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_category_init.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_new_product_create.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_price_property.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_price_setter.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_price_setter_below_zero.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_price_setter_lower.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_price_setter_lower_not_successful.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_price_setter_lower_successful.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_price_setter_lower_while.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_product_init.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_products_count.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_products_list_property.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_products_property.executor": "Run",
+    "Python tests.Python tests for test_work_with_json.TestCreateObjectFromJson.executor": "Run",
+    "Python tests.Python tests for test_work_with_json.TestCreateObjectFromJson.test_empty_data.executor": "Run",
+    "Python tests.Python tests for test_work_with_json.TestCreateObjectFromJson.test_invalid_data.executor": "Run",
+    "Python tests.Python tests for test_work_with_json.TestCreateObjectFromJson.test_successful_creation.executor": "Run",
+    "Python tests.Python tests for test_work_with_json.TestReadJson.executor": "Run",
+    "Python tests.Python tests for test_work_with_json.TestReadJson.test_file_not_found.executor": "Run",
+    "Python tests.Python tests for test_work_with_json.TestReadJson.test_invalid_json.executor": "Run",
+    "Python tests.Python tests for test_work_with_json.TestReadJson.test_successful_read.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "HW2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\petys\PycharmProjects\GitFlow" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_work_with_json.TestReadJson">
-    <configuration name="Python tests for test_work_with_json.TestCreateObjectFromJson" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_category_product.TestProduct.test_new_product_with_invalid_objects">
+    <configuration name="Python tests for test_category_product.TestProduct.test_new_product_with_invalid_objects" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GitFlow" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,11 +97,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_work_with_json.TestCreateObjectFromJson&quot;" />
+      <option name="_new_target" value="&quot;test_category_product.TestProduct.test_new_product_with_invalid_objects&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_work_with_json.TestCreateObjectFromJson.test_empty_data" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_category_product.test_new_product_create" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GitFlow" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -99,11 +112,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_work_with_json.TestCreateObjectFromJson.test_empty_data&quot;" />
+      <option name="_new_target" value="&quot;test_category_product.test_new_product_create&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_work_with_json.TestCreateObjectFromJson.test_invalid_data" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_category_product.test_price_setter_lower_not_successful" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GitFlow" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,11 +127,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_work_with_json.TestCreateObjectFromJson.test_invalid_data&quot;" />
+      <option name="_new_target" value="&quot;test_category_product.test_price_setter_lower_not_successful&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_work_with_json.TestCreateObjectFromJson.test_successful_creation" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_category_product.test_price_setter_lower_successful" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GitFlow" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -129,11 +142,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_work_with_json.TestCreateObjectFromJson.test_successful_creation&quot;" />
+      <option name="_new_target" value="&quot;test_category_product.test_price_setter_lower_successful&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_work_with_json.TestReadJson" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_category_product.test_price_setter_lower_while" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GitFlow" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,17 +157,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_work_with_json.TestReadJson&quot;" />
+      <option name="_new_target" value="&quot;test_category_product.test_price_setter_lower_while&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_work_with_json.TestReadJson" />
-        <item itemvalue="Python tests.Python tests for test_work_with_json.TestCreateObjectFromJson" />
-        <item itemvalue="Python tests.Python tests for test_work_with_json.TestCreateObjectFromJson.test_invalid_data" />
-        <item itemvalue="Python tests.Python tests for test_work_with_json.TestCreateObjectFromJson.test_empty_data" />
-        <item itemvalue="Python tests.Python tests for test_work_with_json.TestCreateObjectFromJson.test_successful_creation" />
+        <item itemvalue="Python tests.Python tests for test_category_product.TestProduct.test_new_product_with_invalid_objects" />
+        <item itemvalue="Python tests.Python tests for test_category_product.test_new_product_create" />
+        <item itemvalue="Python tests.Python tests for test_category_product.test_price_setter_lower_while" />
+        <item itemvalue="Python tests.Python tests for test_category_product.test_price_setter_lower_not_successful" />
+        <item itemvalue="Python tests.Python tests for test_category_product.test_price_setter_lower_successful" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +291,39 @@
       <option name="project" value="LOCAL" />
       <updated>1738580872987</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add new funcs for class Category: products and add_product">
+      <option name="closed" value="true" />
+      <created>1738697096980</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1738697096981</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add new funcs for class Product: property price,  price.setter and new_product">
+      <option name="closed" value="true" />
+      <created>1738701219872</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1738701219872</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fixes">
+      <option name="closed" value="true" />
+      <created>1738702416232</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1738702416232</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fixes and tests for new funcs from category.py">
+      <option name="closed" value="true" />
+      <created>1738704534626</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1738704534627</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -295,6 +340,10 @@
     <MESSAGE value="add README.md" />
     <MESSAGE value="add tests for work_with_json.py" />
     <MESSAGE value="coverage" />
-    <option name="LAST_COMMIT_MESSAGE" value="coverage" />
+    <MESSAGE value="add new funcs for class Category: products and add_product" />
+    <MESSAGE value="add new funcs for class Product: property price,  price.setter and new_product" />
+    <MESSAGE value="fixes" />
+    <MESSAGE value="fixes and tests for new funcs from category.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes and tests for new funcs from category.py" />
   </component>
 </project>
