@@ -1,26 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/GitFlow.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="fixes and tests for new funcs from category.py">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_category_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_category_product.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="HW1" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ch3rk4&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ch3rk4/GitFlow.git&quot;,
+    &quot;accountId&quot;: &quot;6f96d88e-1535-4788-810a-49b80da077ca&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2sU3wRxoWCdlYCB0xwjkllUYtd9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -29,10 +51,126 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for test_category_product.TestProduct.test_new_product_with_invalid_objects.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_add_product.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_categories_count.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_category_init.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_new_product_create.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_price_property.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_price_setter.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_price_setter_below_zero.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_price_setter_lower.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_price_setter_lower_not_successful.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_price_setter_lower_successful.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_price_setter_lower_while.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_product_init.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_products_count.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_products_list_property.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_products_property.executor": "Run",
+    "Python tests.Python tests for test_work_with_json.TestCreateObjectFromJson.executor": "Run",
+    "Python tests.Python tests for test_work_with_json.TestCreateObjectFromJson.test_empty_data.executor": "Run",
+    "Python tests.Python tests for test_work_with_json.TestCreateObjectFromJson.test_invalid_data.executor": "Run",
+    "Python tests.Python tests for test_work_with_json.TestCreateObjectFromJson.test_successful_creation.executor": "Run",
+    "Python tests.Python tests for test_work_with_json.TestReadJson.executor": "Run",
+    "Python tests.Python tests for test_work_with_json.TestReadJson.test_file_not_found.executor": "Run",
+    "Python tests.Python tests for test_work_with_json.TestReadJson.test_invalid_json.executor": "Run",
+    "Python tests.Python tests for test_work_with_json.TestReadJson.test_successful_read.executor": "Run",
+    "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "HW2"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\petys\PycharmProjects\GitFlow" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for test_category_product.TestProduct.test_new_product_with_invalid_objects">
+    <configuration name="Python tests for test_category_product.TestProduct.test_new_product_with_invalid_objects" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="GitFlow" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_category_product.TestProduct.test_new_product_with_invalid_objects&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_category_product.test_new_product_create" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="GitFlow" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_category_product.test_new_product_create&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_category_product.test_price_setter_lower_not_successful" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="GitFlow" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_category_product.test_price_setter_lower_not_successful&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_category_product.test_price_setter_lower_successful" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="GitFlow" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_category_product.test_price_setter_lower_successful&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_category_product.test_price_setter_lower_while" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="GitFlow" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_category_product.test_price_setter_lower_while&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_category_product.TestProduct.test_new_product_with_invalid_objects" />
+        <item itemvalue="Python tests.Python tests for test_category_product.test_new_product_create" />
+        <item itemvalue="Python tests.Python tests for test_category_product.test_price_setter_lower_while" />
+        <item itemvalue="Python tests.Python tests for test_category_product.test_price_setter_lower_not_successful" />
+        <item itemvalue="Python tests.Python tests for test_category_product.test_price_setter_lower_successful" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -49,6 +187,163 @@
       <option name="presentableId" value="Default" />
       <updated>1738496564043</updated>
     </task>
+    <task id="LOCAL-00001" summary="main">
+      <option name="closed" value="true" />
+      <created>1738497247138</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738497247138</updated>
+    </task>
+    <task id="LOCAL-00002" summary="create base for develop">
+      <option name="closed" value="true" />
+      <created>1738498017350</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738498017350</updated>
+    </task>
+    <task id="LOCAL-00003" summary="write classes Product and Category">
+      <option name="closed" value="true" />
+      <created>1738498752355</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738498752355</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add products.json to data">
+      <option name="closed" value="true" />
+      <created>1738498839236</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738498839236</updated>
+    </task>
+    <task id="LOCAL-00005" summary="write conftest.py">
+      <option name="closed" value="true" />
+      <created>1738499713199</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738499713199</updated>
+    </task>
+    <task id="LOCAL-00006" summary="write tests for Product and Category and fix code for tests">
+      <option name="closed" value="true" />
+      <created>1738500505661</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738500505661</updated>
+    </task>
+    <task id="LOCAL-00007" summary="realize reading json file and fixes">
+      <option name="closed" value="true" />
+      <created>1738501858971</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738501858971</updated>
+    </task>
+    <task id="LOCAL-00008" summary="use black, isort and write docstrings">
+      <option name="closed" value="true" />
+      <created>1738502027361</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738502027361</updated>
+    </task>
+    <task id="LOCAL-00009" summary="use coverage and fixes">
+      <option name="closed" value="true" />
+      <created>1738502913045</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738502913045</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix for mypy">
+      <option name="closed" value="true" />
+      <created>1738503425242</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1738503425242</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add README.md">
+      <option name="closed" value="true" />
+      <created>1738503915941</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738503915942</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add tests for work_with_json.py">
+      <option name="closed" value="true" />
+      <created>1738580862823</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1738580862823</updated>
+    </task>
+    <task id="LOCAL-00013" summary="coverage">
+      <option name="closed" value="true" />
+      <created>1738580872987</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1738580872987</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add new funcs for class Category: products and add_product">
+      <option name="closed" value="true" />
+      <created>1738697096980</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1738697096981</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add new funcs for class Product: property price,  price.setter and new_product">
+      <option name="closed" value="true" />
+      <created>1738701219872</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1738701219872</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fixes">
+      <option name="closed" value="true" />
+      <created>1738702416232</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1738702416232</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fixes and tests for new funcs from category.py">
+      <option name="closed" value="true" />
+      <created>1738704534626</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1738704534627</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="main" />
+    <MESSAGE value="create base for develop" />
+    <MESSAGE value="write classes Product and Category" />
+    <MESSAGE value="add products.json to data" />
+    <MESSAGE value="write conftest.py" />
+    <MESSAGE value="write tests for Product and Category and fix code for tests" />
+    <MESSAGE value="realize reading json file and fixes" />
+    <MESSAGE value="use black, isort and write docstrings" />
+    <MESSAGE value="use coverage and fixes" />
+    <MESSAGE value="fix for mypy" />
+    <MESSAGE value="add README.md" />
+    <MESSAGE value="add tests for work_with_json.py" />
+    <MESSAGE value="coverage" />
+    <MESSAGE value="add new funcs for class Category: products and add_product" />
+    <MESSAGE value="add new funcs for class Product: property price,  price.setter and new_product" />
+    <MESSAGE value="fixes" />
+    <MESSAGE value="fixes and tests for new funcs from category.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes and tests for new funcs from category.py" />
   </component>
 </project>
