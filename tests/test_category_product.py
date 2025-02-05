@@ -1,4 +1,3 @@
-from sys import exc_info
 from unittest.mock import patch
 
 import pytest
