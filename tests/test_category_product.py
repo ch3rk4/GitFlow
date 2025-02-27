@@ -156,3 +156,7 @@ class TestProduct:
             )
         except TypeError:
             pytest.fail('Unexpected TypeError for valid products')
+
+
+def test_product_str(product):
+    assert str(product) == "chicken, 150.0 руб. Остаток: 50 шт."
