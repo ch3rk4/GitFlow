@@ -160,3 +160,7 @@ class TestProduct:
 
 def test_product_str(product):
     assert str(product) == "chicken, 150.0 руб. Остаток: 50 шт."
+
+
+def test_category_str(first_category):
+    assert str(first_category) == "Vegetables, количество продуктов: 180 шт."
