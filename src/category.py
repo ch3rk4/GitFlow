@@ -1,5 +1,7 @@
 from typing import Any
 
+from src.product import Product
+
 
 class Category:
     """Класс формирует категорию 'Категория'"""
@@ -13,7 +15,9 @@ class Category:
     categories_count = 0
     products_count = 0
 
-    def __init__(self, name: str, description: str, products: list[Any] = None) -> None:
+    def __init__(
+        self, name: str, description: str, products: list[Product] = None
+    ) -> None:
         self.name = name
         self.description = description
         self.__products = products if products else []

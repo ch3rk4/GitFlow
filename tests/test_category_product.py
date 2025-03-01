@@ -34,10 +34,9 @@ def test_products_count(first_category: Category, second_category: Category) -> 
 
 
 def test_products_property(first_category: Category) -> None:
-    assert first_category.products == ([
-        "cucumber, 30.0 руб. Остаток: 100 шт.",
-        "tomato, 50.0 руб. Остаток: 80 шт."
-    ])
+    assert first_category.products == (
+        ["cucumber, 30.0 руб. Остаток: 100 шт.", "tomato, 50.0 руб. Остаток: 80 шт."]
+    )
 
 
 def test_products_list_property(first_category: Category) -> None:
@@ -59,7 +58,7 @@ def test_price_setter_successful(product: Product) -> None:
     assert product.price == 160.0
 
 
-def test_price_setter_below_zero(product:Product) -> None:
+def test_price_setter_below_zero(product: Product) -> None:
     with pytest.raises(ValueError) as e:
         product.price = -50.0
 
@@ -67,37 +66,37 @@ def test_price_setter_below_zero(product:Product) -> None:
 
 
 def test_price_setter_lower_successful(product: Product) -> None:
-    with patch('builtins.input', return_value = 'y') as mock_input:
+    with patch("builtins.input", return_value="y") as mock_input:
         product.price = 140.0
 
         assert product.price == 140.0
 
         mock_input.assert_called_with(
             "Подтвердите понижение цены товара: введите 'y' (yes) или 'n'(no)"
-            )
+        )
 
 
 def test_price_setter_lower_not_successful(product: Product) -> None:
-    with patch('builtins.input', return_value = 'n') as mock_input, \
-            patch('builtins.print') as mock_print:
+    with patch("builtins.input", return_value="n") as mock_input, patch(
+        "builtins.print"
+    ) as mock_print:
         product.price = 140.0
 
         assert product.price == 150.0
 
         mock_input.assert_called_with(
             "Подтвердите понижение цены товара: введите 'y' (yes) или 'n'(no)"
-            )
-
-        mock_print.assert_called_with(
-            "Вы отказались понижать цену"
         )
+
+        mock_print.assert_called_with("Вы отказались понижать цену")
 
 
 def test_price_setter_lower_while(product: Product) -> None:
-    input_response = ['a', 'y']
+    input_response = ["a", "y"]
 
-    with patch('builtins.input', side_effect=input_response) as mock_input, \
-            patch('builtins.print') as mock_print:
+    with patch("builtins.input", side_effect=input_response) as mock_input, patch(
+        "builtins.print"
+    ) as mock_print:
         product.price = 140.0
 
         assert product.price == 140.0
@@ -105,36 +104,35 @@ def test_price_setter_lower_while(product: Product) -> None:
         assert mock_input.call_count == 2
         mock_input.assert_called_with(
             "Подтвердите понижение цены товара: введите 'y' (yes) или 'n'(no)"
-            )
-        mock_print.assert_called_with(
-            "Некорректный ответ! Введите 'y' или 'n'"
         )
+        mock_print.assert_called_with("Некорректный ответ! Введите 'y' или 'n'")
 
 
 def test_new_product_create() -> None:
-    new_product = Product('tomato', 'red', 70.0, 50)
-    new_product.name = 'tomato'
-    new_product.description = 'red'
+    new_product = Product("tomato", "red", 70.0, 50)
+    new_product.name = "tomato"
+    new_product.description = "red"
     new_product.__price = 70.0
     new_product.quantity = 50
 
 
 class TestProduct:
     """Тесты для метода new_product класса Product"""
+
     def test_new_product_with_invalid_objects(self):
         class FakeProduct:
             def __init__(self, name):
                 self.name = name
 
-        invalid_products = [FakeProduct('Fake')]
+        invalid_products = [FakeProduct("Fake")]
 
         with pytest.raises(TypeError) as e:
             Product.new_product(
-                name='Test Product',
-                description='Test',
+                name="Test Product",
+                description="Test",
                 price=100.0,
                 quantity=5,
-                products=invalid_products
+                products=invalid_products,
             )
 
         assert str(e.value) == (
@@ -142,20 +140,18 @@ class TestProduct:
         ).replace("FakeProduct instance", str(invalid_products[0]))
 
     def test_new_product_with_valid_objects(self):
-        valid_product = [
-            Product('Valid product', 'valid', 200.0, 10)
-        ]
+        valid_product = [Product("Valid product", "valid", 200.0, 10)]
 
         try:
             Product.new_product(
-                name='Test Product',
-                description='Test',
+                name="Test Product",
+                description="Test",
                 price=100.0,
                 quantity=5,
-                products=valid_product
+                products=valid_product,
             )
         except TypeError:
-            pytest.fail('Unexpected TypeError for valid products')
+            pytest.fail("Unexpected TypeError for valid products")
 
 
 def test_product_str(product):

@@ -51,7 +51,9 @@ class Product:
 
         for product in products:
             if not isinstance(product, cls):
-                raise TypeError(f"Объект {product} не является экземпляром класса Product")
+                raise TypeError(
+                    f"Объект {product} не является экземпляром класса Product"
+                )
 
         for product in products:
             if product.name == name:

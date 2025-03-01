@@ -4,6 +4,7 @@ import pytest
 
 from src.category import Category
 from src.product import Product
+from src.products_iterator import ProductIterator
 
 
 @pytest.fixture(autouse=True)
@@ -42,6 +43,12 @@ def second_category() -> Category:
 def product() -> Product:
     return Product(name="chicken", description="drumstick", price=150.0, quantity=50)
 
+
 @pytest.fixture()
 def product2() -> Product:
     return Product(name="cucumber", description="smooth", price=50.0, quantity=20)
+
+
+@pytest.fixture()
+def products_iterator(first_category: Category) -> ProductIterator:
+    return ProductIterator(first_category)

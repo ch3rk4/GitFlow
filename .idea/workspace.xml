@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="add print as str for category.py and add test for this">
+    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="add &quot;add products&quot; for product.py and add test for this">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/product.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_category_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_category_product.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +72,9 @@
     "Python tests.Python tests for test_category_product.test_products_count.executor": "Run",
     "Python tests.Python tests for test_category_product.test_products_list_property.executor": "Run",
     "Python tests.Python tests for test_category_product.test_products_property.executor": "Run",
+    "Python tests.Python tests for test_products_iterator.test_init_with_invalid_types_parametrized.executor": "Run",
+    "Python tests.Python tests for test_products_iterator.test_isinstance_products.executor": "Run",
+    "Python tests.Python tests for test_products_iterator.test_products_iterator.executor": "Run",
     "Python tests.Python tests for test_work_with_json.TestCreateObjectFromJson.executor": "Run",
     "Python tests.Python tests for test_work_with_json.TestCreateObjectFromJson.test_empty_data.executor": "Run",
     "Python tests.Python tests for test_work_with_json.TestCreateObjectFromJson.test_invalid_data.executor": "Run",
@@ -92,22 +93,7 @@
       <recent name="C:\Users\petys\PycharmProjects\GitFlow" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_category_product.test_add_products">
-    <configuration name="Python tests for test_category_product.TestProduct.test_new_product_with_valid_objects" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="GitFlow" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_category_product.TestProduct.test_new_product_with_valid_objects&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Python tests for test_products_iterator.test_products_iterator">
     <configuration name="Python tests for test_category_product.test_add_products" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GitFlow" />
       <option name="ENV_FILES" value="" />
@@ -120,36 +106,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_category_product.test_add_products&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_category_product.test_category_str" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="GitFlow" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_category_product.test_category_str&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_category_product.test_product_str" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="GitFlow" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_category_product.test_product_str&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -168,13 +124,58 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_products_iterator.test_init_with_invalid_types_parametrized" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="GitFlow" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_products_iterator.test_init_with_invalid_types_parametrized&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_products_iterator.test_isinstance_products" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="GitFlow" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_products_iterator.test_isinstance_products&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_products_iterator.test_products_iterator" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="GitFlow" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_products_iterator.test_products_iterator&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_products_iterator.test_products_iterator" />
+        <item itemvalue="Python tests.Python tests for test_products_iterator.test_init_with_invalid_types_parametrized" />
+        <item itemvalue="Python tests.Python tests for test_products_iterator.test_isinstance_products" />
         <item itemvalue="Python tests.Python tests for test_category_product.test_add_products" />
         <item itemvalue="Python tests.Python tests for test_category_product.test_products_property" />
-        <item itemvalue="Python tests.Python tests for test_category_product.test_category_str" />
-        <item itemvalue="Python tests.Python tests for test_category_product.test_product_str" />
-        <item itemvalue="Python tests.Python tests for test_category_product.TestProduct.test_new_product_with_valid_objects" />
       </list>
     </recent_temporary>
   </component>
@@ -362,7 +363,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740684289378</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add &quot;add products&quot; for product.py and add test for this">
+      <option name="closed" value="true" />
+      <created>1740832162076</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1740832162076</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -387,6 +396,7 @@
     <MESSAGE value="fix" />
     <MESSAGE value="add print as str for product.py and add test for this" />
     <MESSAGE value="add print as str for category.py and add test for this" />
-    <option name="LAST_COMMIT_MESSAGE" value="add print as str for category.py and add test for this" />
+    <MESSAGE value="add &quot;add products&quot; for product.py and add test for this" />
+    <option name="LAST_COMMIT_MESSAGE" value="add &quot;add products&quot; for product.py and add test for this" />
   </component>
 </project>
