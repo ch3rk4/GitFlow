@@ -164,3 +164,7 @@ def test_product_str(product):
 
 def test_category_str(first_category):
     assert str(first_category) == "Vegetables, количество продуктов: 180 шт."
+
+
+def test_add_products(product, product2):
+    assert product + product2 == 8500

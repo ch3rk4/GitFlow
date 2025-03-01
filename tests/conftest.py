@@ -41,3 +41,7 @@ def second_category() -> Category:
 @pytest.fixture()
 def product() -> Product:
     return Product(name="chicken", description="drumstick", price=150.0, quantity=50)
+
+@pytest.fixture()
+def product2() -> Product:
+    return Product(name="cucumber", description="smooth", price=50.0, quantity=20)

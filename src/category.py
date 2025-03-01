@@ -1,7 +1,5 @@
 from typing import Any
 
-from src.product import Product
-
 
 class Category:
     """Класс формирует категорию 'Категория'"""
@@ -10,6 +8,7 @@ class Category:
     description: str
     products: list
     all_products: int
+    product_sum: int
 
     categories_count = 0
     products_count = 0
@@ -19,6 +18,7 @@ class Category:
         self.description = description
         self.__products = products if products else []
         self.all_products = 0
+        self.product_sum = 0
 
         Category.categories_count += 1
         Category.products_count += len(self.__products) if products else 0
