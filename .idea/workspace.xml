@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="fixes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/smartphone.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/smartphone.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_category_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_category_product.py" afterDir="false" />
-    </list>
+    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="write tests and fixes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,11 +50,15 @@
   "keyToString": {
     "Python tests.Python tests for test_category_product.TestProduct.test_new_product_with_invalid_objects.executor": "Run",
     "Python tests.Python tests for test_category_product.TestProduct.test_new_product_with_valid_objects.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_add_error.executor": "Run",
     "Python tests.Python tests for test_category_product.test_add_product.executor": "Run",
     "Python tests.Python tests for test_category_product.test_add_products.executor": "Run",
     "Python tests.Python tests for test_category_product.test_categories_count.executor": "Run",
     "Python tests.Python tests for test_category_product.test_category_init.executor": "Run",
     "Python tests.Python tests for test_category_product.test_category_str.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_lawn_grass_add.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_lawn_grass_add_error.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_lawn_grass_init.executor": "Run",
     "Python tests.Python tests for test_category_product.test_new_product_create.executor": "Run",
     "Python tests.Python tests for test_category_product.test_price_property.executor": "Run",
     "Python tests.Python tests for test_category_product.test_price_setter.executor": "Run",
@@ -74,6 +73,7 @@
     "Python tests.Python tests for test_category_product.test_products_list_property.executor": "Run",
     "Python tests.Python tests for test_category_product.test_products_property.executor": "Run",
     "Python tests.Python tests for test_category_product.test_smartphone_add.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_smartphone_add_error.executor": "Run",
     "Python tests.Python tests for test_category_product.test_smartphone_init.executor": "Run",
     "Python tests.Python tests for test_products_iterator.test_init_with_invalid_types_parametrized.executor": "Run",
     "Python tests.Python tests for test_products_iterator.test_isinstance_products.executor": "Run",
@@ -96,8 +96,8 @@
       <recent name="C:\Users\petys\PycharmProjects\GitFlow" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_category_product.test_smartphone_add_error">
-    <configuration name="Python tests for test_category_product.test_add_products" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_category_product.test_add_error">
+    <configuration name="Python tests for test_category_product.test_add_error" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GitFlow" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -108,11 +108,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_category_product.test_add_products&quot;" />
+      <option name="_new_target" value="&quot;test_category_product.test_add_error&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_category_product.test_category_init" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_category_product.test_lawn_grass_add" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GitFlow" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,11 +123,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_category_product.test_category_init&quot;" />
+      <option name="_new_target" value="&quot;test_category_product.test_lawn_grass_add&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_category_product.test_smartphone_add" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_category_product.test_lawn_grass_add_error" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GitFlow" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,7 +138,22 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_category_product.test_smartphone_add&quot;" />
+      <option name="_new_target" value="&quot;test_category_product.test_lawn_grass_add_error&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_category_product.test_lawn_grass_init" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="GitFlow" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_category_product.test_lawn_grass_init&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -157,28 +172,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_category_product.test_smartphone_init" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="GitFlow" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_category_product.test_smartphone_init&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_category_product.test_add_error" />
+        <item itemvalue="Python tests.Python tests for test_category_product.test_lawn_grass_add_error" />
+        <item itemvalue="Python tests.Python tests for test_category_product.test_lawn_grass_add" />
+        <item itemvalue="Python tests.Python tests for test_category_product.test_lawn_grass_init" />
         <item itemvalue="Python tests.Python tests for test_category_product.test_smartphone_add_error" />
-        <item itemvalue="Python tests.Python tests for test_category_product.test_smartphone_add" />
-        <item itemvalue="Python tests.Python tests for test_category_product.test_smartphone_init" />
-        <item itemvalue="Python tests.Python tests for test_category_product.test_add_products" />
-        <item itemvalue="Python tests.Python tests for test_category_product.test_category_init" />
       </list>
     </recent_temporary>
   </component>
@@ -406,11 +406,18 @@
       <option name="project" value="LOCAL" />
       <updated>1741204829981</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="write tests and fixes">
+      <option name="closed" value="true" />
+      <created>1741206340958</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1741206340958</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="main" />
     <MESSAGE value="create base for develop" />
     <MESSAGE value="write classes Product and Category" />
     <MESSAGE value="add products.json to data" />
@@ -435,6 +442,7 @@
     <MESSAGE value="add new classes Smartphone and LawnGrass" />
     <MESSAGE value="add new funcs (__add__) for Smartphone and LawnGrass + rewrite __add__ for product" />
     <MESSAGE value="fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+    <MESSAGE value="write tests and fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="write tests and fixes" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 from src.product import Product
 
+
 class Smartphone(Product):
     efficiency: int
     model: str
@@ -7,9 +8,16 @@ class Smartphone(Product):
     color: str
 
     def __init__(
-            self, name: str, description: str, price: float, quantity: int,
-            efficiency: int, model: str, memory: int, color: str
-                 ) -> None:
+        self,
+        name: str,
+        description: str,
+        price: float,
+        quantity: int,
+        efficiency: int,
+        model: str,
+        memory: int,
+        color: str,
+    ) -> None:
 
         super().__init__(name, description, price, quantity)
         self.efficiency = efficiency

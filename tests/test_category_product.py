@@ -3,9 +3,9 @@ from unittest.mock import patch
 import pytest
 
 from src.category import Category
+from src.lawn_grass import LawnGrass
 from src.product import Product
 from src.smartphone import Smartphone
-from src.lawn_grass import LawnGrass
 
 
 def test_product_init(product: Product) -> None:
@@ -169,14 +169,14 @@ def test_add_products(product, product2):
 
 
 def test_smartphone_init(smartphone1: Smartphone) -> None:
-    assert smartphone1.name == 'Iphone'
-    assert smartphone1.description == 'Glade'
+    assert smartphone1.name == "Iphone"
+    assert smartphone1.description == "Glade"
     assert smartphone1.price == 300
     assert smartphone1.quantity == 1000
     assert smartphone1.efficiency == 1200
-    assert smartphone1.model == 'XR'
+    assert smartphone1.model == "XR"
     assert smartphone1.memory == 128
-    assert smartphone1.color == 'black'
+    assert smartphone1.color == "black"
 
 
 def test_smartphone_add(smartphone1: Smartphone, smartphone2: Smartphone) -> None:
@@ -189,13 +189,13 @@ def test_smartphone_add_error(smartphone1: Smartphone) -> None:
 
 
 def test_lawn_grass_init(lawn_grass1: LawnGrass) -> None:
-    assert lawn_grass1.name == 'Green grass'
-    assert lawn_grass1.description == 'Green grass'
+    assert lawn_grass1.name == "Green grass"
+    assert lawn_grass1.description == "Green grass"
     assert lawn_grass1.price == 1500
     assert lawn_grass1.quantity == 10000
     assert lawn_grass1.country == "England"
     assert lawn_grass1.germination_period == 6
-    assert lawn_grass1.color == 'black'
+    assert lawn_grass1.color == "black"
 
 
 def test_lawn_grass_add(lawn_grass1: LawnGrass, lawn_grass2: LawnGrass) -> None:
@@ -207,10 +207,10 @@ def test_lawn_grass_add_error(lawn_grass1: LawnGrass) -> None:
         res = lawn_grass1 + 10
 
 
-def test_add_error(product: Product, smartphone1: Smartphone, lawn_grass1: LawnGrass) -> None:
+def test_add_error(
+    product: Product, smartphone1: Smartphone, lawn_grass1: LawnGrass
+) -> None:
     with pytest.raises(TypeError):
         res1 = product + smartphone1
         res2 = product + lawn_grass1
         res3 = smartphone1 + lawn_grass1
-
-
