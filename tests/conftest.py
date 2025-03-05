@@ -5,6 +5,8 @@ import pytest
 from src.category import Category
 from src.product import Product
 from src.products_iterator import ProductIterator
+from src.smartphone import Smartphone
+from src.lawn_grass import LawnGrass
 
 
 @pytest.fixture(autouse=True)
@@ -52,3 +54,25 @@ def product2() -> Product:
 @pytest.fixture()
 def products_iterator(first_category: Category) -> ProductIterator:
     return ProductIterator(first_category)
+
+
+@pytest.fixture()
+def smartphone1() -> Smartphone:
+    return Smartphone('Iphone', 'Glade', 300, 1000, 1200, 'XR', 128, 'black')
+
+
+@pytest.fixture()
+def smartphone2() -> Smartphone:
+    return Smartphone('Samsung', 'Flip', 300, 1000, 1500, 'S20', 1000, 'blue')
+
+
+@pytest.fixture()
+def lawn_grass1() -> LawnGrass:
+    return LawnGrass('Green grass', 'Green grass', 1500, 10000, 'England', 6, 'black')
+
+
+@pytest.fixture()
+def lawn_grass2() -> LawnGrass:
+    return LawnGrass('Black grass', 'Green grass', 1500, 10000, 'Nigeria', 6, 'green')
+
+

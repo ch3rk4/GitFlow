@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="add new funcs (__add__) for Smartphone and LawnGrass + rewrite __add__ for product">
+    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LawnGrass.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lawn_grass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Smartphone.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/smartphone.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/smartphone.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/smartphone.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_category_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_category_product.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +73,8 @@
     "Python tests.Python tests for test_category_product.test_products_count.executor": "Run",
     "Python tests.Python tests for test_category_product.test_products_list_property.executor": "Run",
     "Python tests.Python tests for test_category_product.test_products_property.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_smartphone_add.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_smartphone_init.executor": "Run",
     "Python tests.Python tests for test_products_iterator.test_init_with_invalid_types_parametrized.executor": "Run",
     "Python tests.Python tests for test_products_iterator.test_isinstance_products.executor": "Run",
     "Python tests.Python tests for test_products_iterator.test_products_iterator.executor": "Run",
@@ -95,7 +96,7 @@
       <recent name="C:\Users\petys\PycharmProjects\GitFlow" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_category_product.test_add_products">
+  <component name="RunManager" selected="Python tests.Python tests for test_category_product.test_smartphone_add_error">
     <configuration name="Python tests for test_category_product.test_add_products" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GitFlow" />
       <option name="ENV_FILES" value="" />
@@ -126,7 +127,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_category_product.test_product_init" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_category_product.test_smartphone_add" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GitFlow" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -137,11 +138,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_category_product.test_product_init&quot;" />
+      <option name="_new_target" value="&quot;test_category_product.test_smartphone_add&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_products_iterator.test_init_with_invalid_types_parametrized" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_category_product.test_smartphone_add_error" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GitFlow" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,11 +153,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_products_iterator.test_init_with_invalid_types_parametrized&quot;" />
+      <option name="_new_target" value="&quot;test_category_product.test_smartphone_add_error&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_products_iterator.test_products_iterator" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_category_product.test_smartphone_init" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GitFlow" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -167,17 +168,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_products_iterator.test_products_iterator&quot;" />
+      <option name="_new_target" value="&quot;test_category_product.test_smartphone_init&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_category_product.test_smartphone_add_error" />
+        <item itemvalue="Python tests.Python tests for test_category_product.test_smartphone_add" />
+        <item itemvalue="Python tests.Python tests for test_category_product.test_smartphone_init" />
         <item itemvalue="Python tests.Python tests for test_category_product.test_add_products" />
         <item itemvalue="Python tests.Python tests for test_category_product.test_category_init" />
-        <item itemvalue="Python tests.Python tests for test_category_product.test_product_init" />
-        <item itemvalue="Python tests.Python tests for test_products_iterator.test_products_iterator" />
-        <item itemvalue="Python tests.Python tests for test_products_iterator.test_init_with_invalid_types_parametrized" />
       </list>
     </recent_temporary>
   </component>
@@ -397,7 +398,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741197732410</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="fixes">
+      <option name="closed" value="true" />
+      <created>1741204829981</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1741204829981</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -416,7 +425,6 @@
     <MESSAGE value="coverage" />
     <MESSAGE value="add new funcs for class Category: products and add_product" />
     <MESSAGE value="add new funcs for class Product: property price,  price.setter and new_product" />
-    <MESSAGE value="fixes" />
     <MESSAGE value="fixes and tests for new funcs from category.py" />
     <MESSAGE value="fixes and tests for new funcs from product.py" />
     <MESSAGE value="fix" />
@@ -426,6 +434,7 @@
     <MESSAGE value="add ProductIterator class and tests for this + use black and isort" />
     <MESSAGE value="add new classes Smartphone and LawnGrass" />
     <MESSAGE value="add new funcs (__add__) for Smartphone and LawnGrass + rewrite __add__ for product" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new funcs (__add__) for Smartphone and LawnGrass + rewrite __add__ for product" />
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
 </project>
