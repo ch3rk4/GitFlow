@@ -57,7 +57,6 @@ class Product:
                 raise TypeError(
                     f"Объект {product} не является экземпляром класса Product"
                 )
-
         for product in products:
             if product.name == name:
                 product.quantity += quantity
