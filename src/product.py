@@ -1,7 +1,8 @@
 from src.base_product import BaseProduct
+from src.print_mixin import PrintMixin
 
 
-class Product(BaseProduct):
+class Product(BaseProduct, PrintMixin):
     """Класс формирует категорию 'Продукты'"""
 
     name: str
