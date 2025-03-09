@@ -14,7 +14,7 @@ class Order(BaseQuantityPurchased):
         self.total_amount = self.product.price * self.buy_count
         return self.total_amount
 
-    def _apply_purchase(self) -> None:
+    def apply_purchase(self) -> None:
         """Уменьшает количество товара на складе"""
         if self.product.quantity >= self.buy_count:
             self.product.quantity -= self.buy_count
