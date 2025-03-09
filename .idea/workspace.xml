@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="write tests and fixes" />
+    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="use black, isort and pytest cov">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/product.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="HW3" />
+        <entry key="$PROJECT_DIR$" value="HW4" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -88,7 +91,7 @@
     "Python tests.Python tests for test_work_with_json.TestReadJson.test_successful_read.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "HW4"
+    "git-widget-placeholder": "HW5"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -414,11 +417,18 @@
       <option name="project" value="LOCAL" />
       <updated>1741206340958</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="use black, isort and pytest cov">
+      <option name="closed" value="true" />
+      <created>1741206492766</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1741206492767</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create base for develop" />
     <MESSAGE value="write classes Product and Category" />
     <MESSAGE value="add products.json to data" />
     <MESSAGE value="write conftest.py" />
@@ -443,6 +453,7 @@
     <MESSAGE value="add new funcs (__add__) for Smartphone and LawnGrass + rewrite __add__ for product" />
     <MESSAGE value="fixes" />
     <MESSAGE value="write tests and fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="write tests and fixes" />
+    <MESSAGE value="use black, isort and pytest cov" />
+    <option name="LAST_COMMIT_MESSAGE" value="use black, isort and pytest cov" />
   </component>
 </project>
