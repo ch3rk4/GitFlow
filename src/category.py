@@ -1,7 +1,8 @@
 from src.product import Product
+from src.base_quantity_purchased import BaseQuantityPurchased
 
 
-class Category:
+class Category(BaseQuantityPurchased):
     """Класс формирует категорию 'Категория'"""
 
     name: str
@@ -25,10 +26,12 @@ class Category:
         Category.categories_count += 1
         Category.products_count += len(self.__products) if products else 0
 
-    def __str__(self):
+    def quantity_purchased(self):
         self.all_products = sum(product.quantity for product in self.__products)
+        return self.all_products
 
-        return f"{self.name}, количество продуктов: {self.all_products} шт."
+    def __str__(self):
+        return f"{self.name}, количество продуктов: {self.quantity_purchased()} шт."
 
     @property
     def products(self) -> list:
