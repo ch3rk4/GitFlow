@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="add base_product" />
+    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="fix in base_product">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/print_mixin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/print_mixin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/product.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +79,7 @@
     "Python tests.Python tests for test_category_product.test_smartphone_add.executor": "Run",
     "Python tests.Python tests for test_category_product.test_smartphone_add_error.executor": "Run",
     "Python tests.Python tests for test_category_product.test_smartphone_init.executor": "Run",
+    "Python tests.Python tests for test_print_mixin.test_print_mixin.executor": "Run",
     "Python tests.Python tests for test_products_iterator.test_init_with_invalid_types_parametrized.executor": "Run",
     "Python tests.Python tests for test_products_iterator.test_isinstance_products.executor": "Run",
     "Python tests.Python tests for test_products_iterator.test_products_iterator.executor": "Run",
@@ -96,7 +101,7 @@
       <recent name="C:\Users\petys\PycharmProjects\GitFlow" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_category_product.test_add_error">
+  <component name="RunManager" selected="Python tests.Python tests for test_print_mixin.test_print_mixin">
     <configuration name="Python tests for test_category_product.test_add_error" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GitFlow" />
       <option name="ENV_FILES" value="" />
@@ -157,7 +162,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_category_product.test_smartphone_add_error" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_print_mixin.test_print_mixin" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GitFlow" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -168,17 +173,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_category_product.test_smartphone_add_error&quot;" />
+      <option name="_new_target" value="&quot;test_print_mixin.test_print_mixin&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_print_mixin.test_print_mixin" />
         <item itemvalue="Python tests.Python tests for test_category_product.test_add_error" />
         <item itemvalue="Python tests.Python tests for test_category_product.test_lawn_grass_add_error" />
         <item itemvalue="Python tests.Python tests for test_category_product.test_lawn_grass_add" />
         <item itemvalue="Python tests.Python tests for test_category_product.test_lawn_grass_init" />
-        <item itemvalue="Python tests.Python tests for test_category_product.test_smartphone_add_error" />
       </list>
     </recent_temporary>
   </component>
@@ -430,12 +435,26 @@
       <option name="project" value="LOCAL" />
       <updated>1741521377943</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="add print_mixin">
+      <option name="closed" value="true" />
+      <created>1741521882098</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1741521882098</updated>
+    </task>
+    <task id="LOCAL-00031" summary="fix in base_product">
+      <option name="closed" value="true" />
+      <created>1741522004829</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1741522004829</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add products.json to data" />
-    <MESSAGE value="write conftest.py" />
     <MESSAGE value="write tests for Product and Category and fix code for tests" />
     <MESSAGE value="realize reading json file and fixes" />
     <MESSAGE value="use black, isort and write docstrings" />
@@ -459,6 +478,8 @@
     <MESSAGE value="write tests and fixes" />
     <MESSAGE value="use black, isort and pytest cov" />
     <MESSAGE value="add base_product" />
-    <option name="LAST_COMMIT_MESSAGE" value="add base_product" />
+    <MESSAGE value="add print_mixin" />
+    <MESSAGE value="fix in base_product" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix in base_product" />
   </component>
 </project>
