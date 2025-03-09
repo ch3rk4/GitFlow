@@ -1,5 +1,5 @@
-from src.product import Product
 from src.base_quantity_purchased import BaseQuantityPurchased
+from src.product import Product
 
 
 class Category(BaseQuantityPurchased):

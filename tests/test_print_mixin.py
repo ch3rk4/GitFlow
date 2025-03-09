@@ -1,12 +1,15 @@
+from src.lawn_grass import LawnGrass
 from src.product import Product
 from src.smartphone import Smartphone
-from src.lawn_grass import LawnGrass
 
 
 def test_print_mixin(capsys):
     Product("Купить огурцы", "Купить огурцы для салата", 300.0, 10)
     message = capsys.readouterr()
-    assert message.out.strip() == "Product('Купить огурцы', 'Купить огурцы для салата', 300.0, 10)"
+    assert (
+        message.out.strip()
+        == "Product('Купить огурцы', 'Купить огурцы для салата', 300.0, 10)"
+    )
 
     Smartphone("Iphone", "Glade", 300.0, 10, 1200, "XR", 128, "Black")
     message = capsys.readouterr()

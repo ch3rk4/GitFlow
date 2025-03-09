@@ -1,13 +1,13 @@
 import pytest
 
-from src.order import Order
 from src.category import Category
+from src.order import Order
 from src.product import Product
 
 
 def test_order_init():
     order = Order(Product("chicken", "drumstick", 150.0, 50), 10)
-    assert str(order.product) == str(Product('chicken', 'drumstick', 150.0, 50))
+    assert str(order.product) == str(Product("chicken", "drumstick", 150.0, 50))
     assert order.buy_count == 10
 
 
