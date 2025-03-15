@@ -3,6 +3,7 @@ from unittest.mock import patch
 import pytest
 
 from src.category import Category
+from src.exception import ZeroQuantity
 from src.lawn_grass import LawnGrass
 from src.product import Product
 from src.smartphone import Smartphone
@@ -230,3 +231,34 @@ def test_avg_sum_error() -> None:
     cat1 = Category("name", "descr", [])
 
     assert Category.avg_sum(cat1) == 0
+
+
+def test_add_product_finally(capsys, first_category):
+    assert len(first_category.products) == 2
+
+    product_add = Product(name="chicken", description="drumstick", price=150.0, quantity=50)
+    first_category.add_product(product_add)
+    message = capsys.readouterr()
+    assert "Обработка добавления товара завершена" in message.out
+
+
+def test_add_product_with_modified_zero_quantity(capsys, first_category):
+    """
+    Проверяет обработку исключения ZeroQuantity, когда количество товара
+    изменили на нулевое после создания объекта.
+    """
+    product = Product(name="beef", description="ribeye", price=300.0, quantity=1)
+
+    initial_products_count = len(first_category.products_list)
+
+    product.quantity = 0
+
+    first_category.add_product(product)
+
+    assert len(first_category.products_list) == initial_products_count
+
+    output = capsys.readouterr()
+
+    assert "товар добавлен" not in output.out
+
+    assert "Обработка добавления товара завершена" in output.out

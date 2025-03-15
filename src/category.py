@@ -1,5 +1,8 @@
 from src.base_quantity_purchased import BaseQuantityPurchased
+from src.exception import ZeroQuantity
+from src.lawn_grass import LawnGrass
 from src.product import Product
+from src.smartphone import Smartphone
 
 
 class Category(BaseQuantityPurchased):
@@ -37,10 +40,21 @@ class Category(BaseQuantityPurchased):
     def products(self) -> list:
         return [str(product) for product in self.__products]
 
-    def add_product(self, new_product) -> None:
+    def add_product(self, new_product: Product) -> None:
         """Добавляет товар в категорию"""
-        self.__products.append(new_product)
-        Category.products_count += 1
+        if isinstance(new_product, (Product, Smartphone, LawnGrass)):
+            try:
+                if new_product.quantity <= 0:
+                    raise ZeroQuantity
+            except ZeroQuantity as e:
+                print(e)
+            else:
+                self.__products.append(new_product)
+                Category.products_count += 1
+                print("товар добавлен")
+            finally:
+                print("Обработка добавления товара завершена")
+
 
     @property
     def products_list(self) -> list:
