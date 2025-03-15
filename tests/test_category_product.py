@@ -214,3 +214,9 @@ def test_add_error(
         res1 = product + smartphone1
         res2 = product + lawn_grass1
         res3 = smartphone1 + lawn_grass1
+
+def test_product_init_error() -> None:
+
+    with pytest.raises(ValueError, match="Товар с нулевым количеством не может быть добавлен"):
+        new_prod = Product('cucumber', 'cucumber', 30.0, 0)
+
