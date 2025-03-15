@@ -55,14 +55,14 @@ class Category(BaseQuantityPurchased):
             finally:
                 print("Обработка добавления товара завершена")
 
-
     @property
     def products_list(self) -> list:
         return self.__products
 
     def avg_sum(self) -> float:
         try:
-            return sum([product.price for product in self.__products]) / len(self.__products)
+            return sum([product.price for product in self.__products]) / len(
+                self.__products
+            )
         except ZeroDivisionError:
             return 0
-

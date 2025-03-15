@@ -219,8 +219,10 @@ def test_add_error(
 
 def test_product_init_error() -> None:
 
-    with pytest.raises(ValueError, match="Товар с нулевым количеством не может быть добавлен"):
-        new_prod = Product('cucumber', 'cucumber', 30.0, 0)
+    with pytest.raises(
+        ValueError, match="Товар с нулевым количеством не может быть добавлен"
+    ):
+        new_prod = Product("cucumber", "cucumber", 30.0, 0)
 
 
 def test_avg_sum(first_category):
@@ -236,7 +238,9 @@ def test_avg_sum_error() -> None:
 def test_add_product_finally(capsys, first_category):
     assert len(first_category.products) == 2
 
-    product_add = Product(name="chicken", description="drumstick", price=150.0, quantity=50)
+    product_add = Product(
+        name="chicken", description="drumstick", price=150.0, quantity=50
+    )
     first_category.add_product(product_add)
     message = capsys.readouterr()
     assert "Обработка добавления товара завершена" in message.out

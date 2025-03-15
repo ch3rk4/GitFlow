@@ -14,7 +14,6 @@ class Product(BaseProduct, PrintMixin):
         self, name: str, description: str, price: float, quantity: int
     ) -> None:
 
-
         self.name = name
         self.description = description
         self.__price = price
@@ -24,10 +23,8 @@ class Product(BaseProduct, PrintMixin):
         else:
             self.quantity = quantity
 
-
         super().__init__()
         PrintMixin.__init__(self)
-
 
     def __str__(self):
         return f"{self.name}, {self.__price} руб. Остаток: {self.quantity} шт."

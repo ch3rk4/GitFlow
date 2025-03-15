@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="add func avg_sum in Category and test fpr it">
+    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="add class ZeroQuantity(Exception), use it and test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/category.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/product.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_category_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_category_product.py" afterDir="false" />
@@ -59,6 +60,7 @@
     "Python tests.Python tests for test_category_product.test_add_product.executor": "Run",
     "Python tests.Python tests for test_category_product.test_add_product_error.executor": "Run",
     "Python tests.Python tests for test_category_product.test_add_product_finally.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_add_product_with_modified_zero_quantity.executor": "Run",
     "Python tests.Python tests for test_category_product.test_add_products.executor": "Run",
     "Python tests.Python tests for test_category_product.test_avg_sum.executor": "Run",
     "Python tests.Python tests for test_category_product.test_avg_sum_error.executor": "Run",
@@ -111,7 +113,7 @@
       <recent name="C:\Users\petys\PycharmProjects\GitFlow" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_category_product.test_add_product_finally">
+  <component name="RunManager" selected="Python tests.Python tests for test_category_product.test_add_product_with_modified_zero_quantity">
     <configuration name="Python tests for test_category_product.test_add_product_error" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GitFlow" />
       <option name="ENV_FILES" value="" />
@@ -142,7 +144,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_category_product.test_avg_sum" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_category_product.test_add_product_with_modified_zero_quantity" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GitFlow" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,7 +155,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_category_product.test_avg_sum&quot;" />
+      <option name="_new_target" value="&quot;test_category_product.test_add_product_with_modified_zero_quantity&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -189,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_category_product.test_add_product_with_modified_zero_quantity" />
         <item itemvalue="Python tests.Python tests for test_category_product.test_add_product_finally" />
         <item itemvalue="Python tests.Python tests for test_category_product.test_add_product_error" />
         <item itemvalue="Python tests.Python tests for test_category_product.test_product_init_error" />
         <item itemvalue="Python tests.Python tests for test_category_product.test_avg_sum_error" />
-        <item itemvalue="Python tests.Python tests for test_category_product.test_avg_sum" />
       </list>
     </recent_temporary>
   </component>
@@ -509,7 +511,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742043278237</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="add class ZeroQuantity(Exception), use it and test">
+      <option name="closed" value="true" />
+      <created>1742061014489</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1742061014489</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -524,7 +534,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add README.md" />
     <MESSAGE value="add tests for work_with_json.py" />
     <MESSAGE value="coverage" />
     <MESSAGE value="add new funcs for class Category: products and add_product" />
@@ -549,6 +558,7 @@
     <MESSAGE value="fixes" />
     <MESSAGE value="add func with exceptions and test fpr it" />
     <MESSAGE value="add func avg_sum in Category and test fpr it" />
-    <option name="LAST_COMMIT_MESSAGE" value="add func avg_sum in Category and test fpr it" />
+    <MESSAGE value="add class ZeroQuantity(Exception), use it and test" />
+    <option name="LAST_COMMIT_MESSAGE" value="add class ZeroQuantity(Exception), use it and test" />
   </component>
 </project>
