@@ -215,8 +215,18 @@ def test_add_error(
         res2 = product + lawn_grass1
         res3 = smartphone1 + lawn_grass1
 
+
 def test_product_init_error() -> None:
 
     with pytest.raises(ValueError, match="Товар с нулевым количеством не может быть добавлен"):
         new_prod = Product('cucumber', 'cucumber', 30.0, 0)
 
+
+def test_avg_sum(first_category):
+    assert Category.avg_sum(first_category) == 40.0
+
+
+def test_avg_sum_error() -> None:
+    cat1 = Category("name", "descr", [])
+
+    assert Category.avg_sum(cat1) == 0

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="fixes">
+    <list default="true" id="d63d9d72-ce11-4ef5-88ad-7a016cfe3e8c" name="Changes" comment="add func with exceptions and test fpr it">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/category.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_category_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_category_product.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +57,8 @@
     "Python tests.Python tests for test_category_product.test_add_error.executor": "Run",
     "Python tests.Python tests for test_category_product.test_add_product.executor": "Run",
     "Python tests.Python tests for test_category_product.test_add_products.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_avg_sum.executor": "Run",
+    "Python tests.Python tests for test_category_product.test_avg_sum_error.executor": "Run",
     "Python tests.Python tests for test_category_product.test_categories_count.executor": "Run",
     "Python tests.Python tests for test_category_product.test_category_init.executor": "Run",
     "Python tests.Python tests for test_category_product.test_category_str.executor": "Run",
@@ -106,7 +108,37 @@
       <recent name="C:\Users\petys\PycharmProjects\GitFlow" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_category_product.test_product_init_error">
+  <component name="RunManager" selected="Python tests.Python tests for test_category_product.test_avg_sum_error">
+    <configuration name="Python tests for test_category_product.test_avg_sum" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="GitFlow" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_category_product.test_avg_sum&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_category_product.test_avg_sum_error" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="GitFlow" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_category_product.test_avg_sum_error&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_category_product.test_product_init_error" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GitFlow" />
       <option name="ENV_FILES" value="" />
@@ -152,43 +184,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_order.test_order_init" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="GitFlow" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_order.test_order_init&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_order.test_quantity_purchased" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="GitFlow" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_order.test_quantity_purchased&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_category_product.test_avg_sum_error" />
+        <item itemvalue="Python tests.Python tests for test_category_product.test_avg_sum" />
         <item itemvalue="Python tests.Python tests for test_category_product.test_product_init_error" />
         <item itemvalue="Python tests.Python tests for test_order.test_apply_purchase_error" />
         <item itemvalue="Python tests.Python tests for test_order.test_apply_purchase" />
-        <item itemvalue="Python tests.Python tests for test_order.test_quantity_purchased" />
-        <item itemvalue="Python tests.Python tests for test_order.test_order_init" />
       </list>
     </recent_temporary>
   </component>
@@ -488,11 +490,18 @@
       <option name="project" value="LOCAL" />
       <updated>1741530304689</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="add func with exceptions and test fpr it">
+      <option name="closed" value="true" />
+      <created>1742041868961</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1742041868961</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use coverage and fixes" />
     <MESSAGE value="fix for mypy" />
     <MESSAGE value="add README.md" />
     <MESSAGE value="add tests for work_with_json.py" />
@@ -517,6 +526,7 @@
     <MESSAGE value="add new BaseQuantityPurchased" />
     <MESSAGE value="add test for order and fixes" />
     <MESSAGE value="fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+    <MESSAGE value="add func with exceptions and test fpr it" />
+    <option name="LAST_COMMIT_MESSAGE" value="add func with exceptions and test fpr it" />
   </component>
 </project>
